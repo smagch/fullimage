@@ -10,7 +10,9 @@
     // parent or selector 
     appendTo: 'body',
     scrollElement: 'parent',
-    delay: 300
+    delay: 300,
+    classToAdd: '',
+    classToRemove: 'collapsed'
   },
   
   callbacks = (function(){
@@ -62,7 +64,9 @@
         _offset = $this.offset(),
         offset = {
           top: _offset.top + $scroll.scrollTop(),
-          left: _offset.left + $scroll.scrollLeft()
+          //top: _offset.top + $scroll.scrollTop(), //+ safeParseInt($scroll.css('padding-top')),// + safeParseInt($this.css('border-top-width')),
+          left: _offset.left + $scroll.scrollLeft(),
+          //left: _offset.left + $scroll.scrollLeft(), //+ safeParseInt($scroll.css('padding-left')),// + safeParseInt($this.css('border-left-width'))
         },
         metrics = {
           top: offset.top,
@@ -77,7 +81,8 @@
           })
           .clone()
             // TODO - another strategy
-            .removeClass('collapsed')
+            .removeClass(options.classToRemove)
+            .addClass(options.classToAdd)
             .css({
               position: 'absolute',
               top: metrics.top - scrollOffset.top - safeParseInt($scroll.css('border-top-width')),

@@ -4,21 +4,19 @@
 <script src="../jquery.fullimage.js" type="text/javascript" charset="utf-8"></script>
 <style type="text/css" media="screen">
 body {
-  margin: 0;
-  padding: 0;
+  margin: 100px;
+  padding: 100px;
+  border: 10px solid #999;
 }
 ul {
   border: 20px solid #585858;
   overflow: hidden;
   background: #995952;
-  margin: 20px auto;
-  padding: 10px;
-  width: 70%;
 }
 ul.collapsed {
   height: 60px;
 }
-#wrapper {
+/*#wrapper {
   overflow: auto;
   margin: 0 auto;
   position: absolute;
@@ -27,14 +25,12 @@ ul.collapsed {
   left: 100px;
   right: 100px;
   border: 10px solid #3C3C3C;
-  padding: 100px;
-  margin: 50px;
 }
 #wrapper:after {
   display: block;
   content: '';
   height: 400px;
-}
+}*/
 
 </style>
 
@@ -46,8 +42,8 @@ $(function($) {
       clone: 1,
       original: 0
     },
-    scrollElement: '#wrapper',
-    appendTo: '#wrapper'
+    scrollElement: 'body',
+    appendTo: 'body'
   });
 });
 
@@ -55,21 +51,7 @@ $(function($) {
 </script>
 </head>
 <body>
-<div id='wrapper'>
   <ul class='collapsed'>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-  </ul>
-  
-  
-  
-  <ul class=''>
     <li>hogehogehoge</li>
     <li>hogehogehoge</li>
     <li>hogehogehoge</li>
@@ -95,7 +77,20 @@ $(function($) {
   
   
   
-  <ul class=''>
+  <ul class='collapsed'>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+  </ul>
+  
+  
+  
+  <ul class='collapsed'>
     <li>hogehogehoge</li>
     <li>hogehogehoge</li>
     <li>hogehogehoge</li>
@@ -122,7 +117,7 @@ $(function($) {
   
   
   
-  <ul class=''>
+  <ul class='collapsed'>
     <li>hogehogehoge</li>
     <li>hogehogehoge</li>
     <li>hogehogehoge</li>
@@ -148,33 +143,7 @@ $(function($) {
   
   
   
-  <ul class=''>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-  </ul>
-  
-  
-  
   <ul class='collapsed'>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-    <li>hogehogehoge</li>
-  </ul>
-  
-  
-  
-  <ul class=''>
     <li>hogehogehoge</li>
     <li>hogehogehoge</li>
     <li>hogehogehoge</li>
@@ -340,6 +309,31 @@ $(function($) {
     <li>hogehogehoge</li>
     <li>hogehogehoge</li>
   </ul>
-</div>
+  
+  
+  
+  <ul class='collapsed'>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+  </ul>
+  
+  
+  
+  <ul class='collapsed'>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+    <li>hogehogehoge</li>
+  </ul>
 </body>
 </html>
